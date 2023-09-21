@@ -1,0 +1,39 @@
+.sec2{
+    display: grid;
+}
+h2{
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+h3{
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+img{
+    max-width: 200px;
+    display: inline;
+    align-self: center;
+    margin: 0 auto;
+}
+nav{
+    background-color: rgb(203, 239, 250);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: inline;
+}
+
+header{
+    margin: 0 auto;
+    background-color: rgb(249, 250, 223);
+    text-align: center;
+    vertical-align: center;
+}
+ul{
+    list-style-type: none;
+}
