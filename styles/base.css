@@ -22,11 +22,14 @@ img{
     margin: 0 auto;
 }
 nav{
-    background-color: rgb(203, 239, 250);
+    background-color: aliceblue;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     display: inline;
+}
+nav a:hover{
+    border: 1px solid #000;
 }
 
 header{
@@ -43,4 +46,14 @@ ul{
 }
 #lastModificationDate{
     text-align: center;
+}
+@media (min-width: 640px) {
+    nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+    }  
+    nav ul li{
+    flex: 1 1 100%;
+    } 
 }
