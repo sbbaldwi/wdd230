@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 .sec2{
-    text-align: center;
+    text-align: left;
+    padding: 10px;
+    max-width: 75%;
+    margin: 0 auto;
 }
 h2{
     font-family: 'Lora', serif;
@@ -53,6 +56,29 @@ ul{
 #lastModificationDate{
     text-align: center;
 }
+#activityHeading{
+    text-align: center;
+    color: #1e1e1e;
+    background-color: rgb(166, 207, 244);;
+    padding: 3px;
+    font-size: 1.5em;
+    font-family: 'Lora', serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+#information{
+    text-align: center;
+    color: #1e1e1e;
+    background-color: rgb(166, 207, 244);
+    padding: 3px;
+    font-size: 1.5em;
+    font-family: 'Lora', serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
 @media (min-width: 640px) {
     nav ul{
     display: flex;
