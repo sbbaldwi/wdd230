@@ -1,4 +1,5 @@
-let time = document.getElementById("currentYear");
+
+let time = document.getElementById("year");
 
 var lastModificationDate = new Date(document.lastModified);
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 .sec2{
-    display: grid;
+    text-align: center;
 }
 h2{
     font-family: 'Lora', serif;
@@ -14,6 +14,12 @@ h1{
 h3{
     font-family: 'Lora', serif;
     text-align: center;
+    background: #cce6ef;
+    font-size: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 0;
 }
 img{
     max-width: 200px;
