@@ -1,8 +1,15 @@
 
 body {
-	font-family: Roboto, helvetica, sans-serif;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+section{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+@font-face {
+    font-family: "barbri font";
+    src: url("../fonts/MyFontRegular.ttf");
+}
 header,
 main,
 footer {
@@ -42,6 +49,19 @@ article p {
 	color: rgb(236, 236, 236);
 	background-color: #0f012c;
     padding: 1rem;
+}
+#Organization{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.1em;
+	font-weight: bolder;
+}
+h3{
+	font-family: "barbri font";
+	font-weight: bold;
+	font-style: italic;
+	padding-top: 10px;
+	vertical-align: middle;
+	font-size: 1.6em;
 }
 
 footer {
