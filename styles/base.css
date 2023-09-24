@@ -3,6 +3,9 @@
     font-family: "barbri font";
     src: url("../fonts/MyFontRegular.ttf");
 }
+footer{
+    background-color: #efcce6;
+}
 
 .sec2{
     text-align: center;
