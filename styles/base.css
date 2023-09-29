@@ -103,6 +103,11 @@ ul{
 	box-sizing: border-box;
 }
 
+iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
 /* small view navigation */
 #menu {
 	font-size: 1.5rem;
