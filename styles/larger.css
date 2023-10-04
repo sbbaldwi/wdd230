@@ -9,6 +9,7 @@
     } 
 	iframe {
 		max-width: 1200px;
+		align-self: center;
 	}
 }
 @media (min-width: 37.5em) {
