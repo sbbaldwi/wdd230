@@ -1,9 +1,6 @@
-
+let lastModified = document.getElementById("lastModified");
 let time = document.getElementById("year");
 
-var lastModificationDate = new Date(document.lastModified);
-
-time.innerHTML= new Date().getFullYear();
-let lastModified = document.getElementById("lastModificationDate");
-lastModified.innerHTML= lastModificationDate;
+time.innerHTML = new Date().getFullYear();
+lastModified.innerHTML = document.lastModified;
 

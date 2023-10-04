@@ -1,24 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 @font-face {
     font-family: "barbri font";
     src: url("../fonts/MyFontRegular.ttf");
 }
-footer{
+
+footer {
     background-color: #efcce6;
+    padding: 10px;
 }
 
-.sec2{
-    text-align: center;
-    padding: 10px;
-    max-width: 90%;
-    margin: 0 auto;
-}
-h2{
+h2 {
     font-style: normal;
     text-align: center;
     margin: 0 auto;
 }
-h1{
+
+h1 {
     font-family: 'barbri font';
     font-weight: bold;
     font-style: italic;
@@ -27,46 +25,54 @@ h1{
     font-size: 2.5em;
     color: rgb(246, 235, 243);
 }
-img{
+
+img {
     max-width: 200px;
     display: inline;
     align-self: center;
     margin: 0 auto;
 }
-nav{
+
+nav {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     display: inline;
 }
-nav a:hover{
+
+nav a:hover {
     border: 1px solid rgb(251, 52, 181);
 }
 
-header{
+header {
     margin: 0 auto;
     background-color: rgb(251, 52, 181);
     text-align: center;
     vertical-align: center;
-    max-width: 90%;
+    max-width: 1200px;
     padding-top: 15px;
     padding-bottom: 10px;
 }
-ul{
+
+ul {
     list-style-type: none;
     max-width: 90%;
     margin: 0 auto;
 }
-#currentYear{
+
+#currentYear {
     text-align: center;
 }
-#lastModificationDate{
+
+#lastModificationDate {
     text-align: center;
 }
-h3{
+
+h3 {
     text-align: center;
     color: #1e1e1e;
-    background-color: #efcce6;;
+    background-color: #efcce6;
+    ;
     padding: 3px;
     font-size: 1.8em;
     font-family: 'barbri font', serif;
@@ -74,7 +80,8 @@ h3{
     border-top-right-radius: 10px;
     margin: 0;
 }
-#information{
+
+#information {
     text-align: center;
     color: #1e1e1e;
     background-color: #efcce6;
@@ -85,73 +92,83 @@ h3{
     border-top-right-radius: 10px;
     margin: 0;
 }
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 iframe {
+    max-width: 400px;
     width: 100%;
     border-radius: 5px;
-    align-self: center;
+    margin: 25px auto;
+    display: block;
+
 }
 
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
-    position: _________;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "❎";
+    content: "❎";
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
+
 .navigation li {
-	display: none;
+    display: none;
 }
+
 .navigation li a {
-	display: block;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color:#1e1e1e;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1e1e1e;
 }
+
 .navigation li a:hover {
-	background-color: #efcce6;
-	font-weight: 700;
+    background-color: #efcce6;
+    font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
+
 .open li a {
-	display: block;
+    display: block;
 }
 
 .active::before {
-	content: "📍 ";
+    content: "📍 ";
 }
 
 .stuff {
-	margin: .5m;
-	border: 1px solid rgba(0,0,0,.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
 }
