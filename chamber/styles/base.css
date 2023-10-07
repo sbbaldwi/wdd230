@@ -136,6 +136,47 @@ ul {
     height: 100vh;
 }
 
+#section1 {
+    border: #000;
+    border-width: 2px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.weather-widget {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.location {
+    font-size: 24px;
+}
+
+.temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
 footer {
     background-color: #735751;
     padding: 10px;
