@@ -1,0 +1,32 @@
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    nav {
+        background-color: #735751;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+        background-color: #735751;
+        max-width: 1200px;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+}

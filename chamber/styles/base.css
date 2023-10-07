@@ -7,25 +7,28 @@ html {
     font-family: "Onest";
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    max-width: 1200px;
 }
 
-.hero-text {
+h1 {
     text-align: center;
+    font-family: "Abhaya Libre";
+    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: whitesmoke;
 }
 
-.hero-text button {
+header button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -36,7 +39,107 @@ html {
     cursor: pointer;
 }
 
-.hero-text button:hover {
+header button:hover {
     background-color: #555;
     color: white;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: inline;
+    background-color: #735751;
+}
+
+nav a:hover {
+    border: 1px solid black;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: center;
+    max-width: 1200px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.navigation li a:hover {
+    background-color: #e7d7c1;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+}
+
+footer {
+    background-color: #735751;
+    padding: 10px;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
