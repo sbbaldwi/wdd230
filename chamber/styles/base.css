@@ -28,6 +28,19 @@ h1 {
     color: whitesmoke;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 header button {
     border: none;
     outline: 0;

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bri Christiansen">
-    <link rel="stylesheet" type="text/css" href="../chamber/styles/base.css">
-    <link rel="stylesheet" type="text/css" href="../chamber/styles/larger.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Bri Christiansen WDD230 Chamber of Commerce Site" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/chamber" />
@@ -21,9 +21,8 @@
             <li><a href="#" title="Home"> Home</a></li>
             <li><a href="../lesson03/chamber-site-plan.html" title="siteplan">Siteplan</a></li>
             <li><a href="/chamber/index.html" title="chamber">Chamber</a></li>
-            <li><a href="https://www.byui.edu/" title="byuihome">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/17?lang=eng"
-                    title="scripture">Scripture</a></li>
+            <li><a href="upcoming-events" title="Upcoming Events">Upcoming Events</a></li>
+            <li><a href="Join Now" title="Join Now">Join Now</a></li>
         </ul>
     </nav>
     <script src="../scripts/hammenu.js"></script>
@@ -31,52 +30,59 @@
         <h1>Chandler Chamber of Commerce</h1>
         <button>Join Now!</button>
     </header>
-    <div class="simpleGrid">
-        <section class="image1">
-            <img src="./images/image1.jpg" alt="chandler chamber of commerce Activities">
-        </section>
-        <section class="card">
-            <h2 id="activityHeading">Upcoming Activities</h2>
-            <p>The Chandler Arizona Chamber of Commerce is gearing up for an exciting array of upcoming activities that
-                promise to boost local business engagement and community development. Our calendar is brimming with
-                events designed to connect entrepreneurs, foster networking, and promote economic growth. From
-                informative business seminars and workshops aimed at enhancing skills and knowledge to vibrant
-                networking mixers that encourage collaboration among our members, there's something for everyone.
-                Additionally, we're eagerly anticipating our annual Chandler Business Expo, where local businesses can
-                showcase their products and services to a wide audience. These upcoming activities underscore our
-                commitment to supporting and promoting the vibrant business community in Chandler, Arizona, and we look
-                forward to the valuable connections and opportunities they will bring. Stay tuned for more details, and
-                mark your calendars to join us in building a stronger Chandler together.</p>
-        </section>
-    </div>
-    <div id="section2">
-        <h2 id="companyspotlight">Company Spotlight</h2>
-    </div>
-    <div id="section3">
-        <section>
-            <h3>Company 1 Spotlight</h3>
-        </section>
-        <section>
-            <h3>Comany 2 Spotlight</h3>
-        </section>
-        <section>
-            <h3>Company 3 Spotlight</h3>
-        </section>
-    </div>
-    <div class="weather-widget">
-        <h2>Chandler, Arizona Weather</h2>
-        <div class="weather-info">
-            <div class="location">Chandler</div>
-            <div class="temperature">85°F</div>
-            <div class="description">Sunny</div>
+    <main>
+        <div class="simpleGrid">
+            <section class="image1">
+                <img src="images/image1.jpg" alt="Chandler Chamber of Commerce">
+            </section>
+            <section class="card">
+                <h2 id="activityHeading">Upcoming Activities</h2>
+                <p>The Chandler Arizona Chamber of Commerce is gearing up for an exciting array of upcoming activities
+                    that
+                    promise to boost local business engagement and community development. Our calendar is brimming with
+                    events designed to connect entrepreneurs, foster networking, and promote economic growth. From
+                    informative business seminars and workshops aimed at enhancing skills and knowledge to vibrant
+                    networking mixers that encourage collaboration among our members, there's something for everyone.
+                    Additionally, we're eagerly anticipating our annual Chandler Business Expo, where local businesses
+                    can
+                    showcase their products and services to a wide audience. These upcoming activities underscore our
+                    commitment to supporting and promoting the vibrant business community in Chandler, Arizona, and we
+                    look
+                    forward to the valuable connections and opportunities they will bring. Stay tuned for more details,
+                    and
+                    mark your calendars to join us in building a stronger Chandler together.</p>
+            </section>
         </div>
+        <div id="section2">
+            <h2 id="companyspotlight">Company Spotlight</h2>
+        </div>
+        <div id="section3">
+            <section>
+                <h3>Company 1 Spotlight</h3>
+            </section>
+            <section>
+                <h3>Comany 2 Spotlight</h3>
+            </section>
+            <section>
+                <h3>Company 3 Spotlight</h3>
+            </section>
+        </div>
+        <div class="weather-widget">
+            <h2>Chandler, Arizona Weather</h2>
+            <div class="weather-info">
+                <div class="location">Chandler</div>
+                <div class="temperature">85°F</div>
+                <div class="description">Sunny</div>
+            </div>
+        </div>
+    </main>
+    <div id="mode">
+        🕶️
     </div>
-
+    <script src="scripts/mode.js"></script>
     <footer>
-        <p>©<span id="year"></span> by Bri Christiansen - WDD 230 : Arizona USA</p>
-        <p id="lastModified"></p>
+        <p>©<span id="year"></span> by Bri Christiansen - WDD 230 : Chamber Site</p>
     </footer>
-    <script src="../scripts/getDates.js"></script>
 </body>
 
 </html>
