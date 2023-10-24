@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <img src="./images/profilePic.webp" alt="profile picture">
+        <img class="profile" src="./images/profilePic.webp" alt="profile picture">
         <h1>Bri Christiansen</h1>
     </header>
     <nav>
@@ -36,6 +36,17 @@
     </nav>
     <script src="./scripts/hammenu.js"></script>
     <main>
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/portlandtemple-mobile.webp">
+                <source media="(max-width: 960px)" srcset="images/portlandtemple-large.webp">
+                <img class="temple" src="images/portlandtemple-large.webp" alt="Portland Temple">
+            </picture>
+            <div class="overlay">
+                <h2>Portland Oregon Temple</h2>
+            </div>
+        </div>
+
         <div class="sec1">
             <h2>WDD 230: Web Frontend Development</h2>
         </div>
