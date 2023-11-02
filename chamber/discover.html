@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bri Christiansen">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Bri Christiansen WDD230 Chamber of Commerce Site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/chamber" />
+    <meta propert="og:image"
+        content="https://www.google.com/search?sca_esv=573494380&sxsrf=AM9HkKmfIh7jORqW187DORIvz4eoW_nniA:1697311999290&q=chandler+chamber+of+commerce&tbm=isch&source=lnms&sa=X&ved=2ahUKEwibp6n2o_aBAxWXNzQIHZkaB4AQ0pQJegQIDxAB&biw=1536&bih=707&dpr=1.25#imgrc=eTB3NNzYvNhvBM" />
+    <title>Chandler Chamber of Commerce</title>
+</head>
+
+<body>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" title="Home"> Home</a></li>
+            <li><a href="../lesson03/chamber-site-plan.html" title="siteplan">Siteplan</a></li>
+            <li><a href="/chamber/index.html" title="chamber">Chamber</a></li>
+            <li><a href="upcoming-events" title="Upcoming Events">Upcoming Events</a></li>
+            <li><a href="Join Now" title="Join Now">Join Now</a></li>
+        </ul>
+    </nav>
+    <script src="../scripts/hammenu.js"></script>
+    <header>
+        <h1>Chandler Chamber of Commerce</h1>
+        <button>Join Now!</button>
+    </header>
+    <main class="wrapper">
+        <div class="sidebar">
+            <section>
+                <p id="visitor"></p>
+            </section>
+            <section>
+                <h2>Events</h2>
+                <div>
+                    <h3>Halloween Costume Party and Trick or Treat</h3>
+                    <p>Tuesday 10/31 at 7pm in the Community Center.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Attractions</h2>
+                <div>
+                    <h3>Veterans Oasis Park</h3>
+                    <p>Come enjoy a nature walk around Veterans Oasis Park.</p>
+
+                    <h3>Chandler Center for the Arts</h3>
+                    <p>Come enjoy performances by members of the community!</p>
+                </div>
+            </section>
+        </div>
+        <div class="content">
+            <section id="images">
+                <h1>Discover Chandler</h1>
+                <div>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/pg1-sm.webp">
+                        <img src="images/pg1-lg.webp" alt="Pleasant Grove main street" loading="lazy" width="600"
+                            height="450">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/pg2-sm.webp">
+                        <img src="images/pg2-lg.webp" alt="Pleasant Grove main street" loading="lazy" width="600"
+                            height="450">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/pg3-sm.webp">
+                        <img src="images/pg3-lg.webp" alt="Historic plaque in Pleasant Grove" loading="lazy" width="600"
+                            height="800">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/pg4-sm.webp">
+                        <img src="images/pg4-lg.webp" alt="Chamber Meeting" loading="lazy" width="600" height="450">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/pg-holder1-sm.webp">
+                        <img src="images/pg-holder1-lg.webp" alt="Cool old building" loading="lazy" width="600">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/pg-holder2-sm.webp">
+                        <img src="images/pg-holder2-lg.webp" alt="Main street place holder image" loading="lazy">
+                    </picture>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <div id="mode">
+        🕶️
+    </div>
+    <script src="scripts/mode.js"></script>
+    <footer>
+        <p>©<span id="year"></span> by Bri Christiansen - WDD 230 : Chamber Site</p>
+    </footer>
+</body>
+
+</html>
