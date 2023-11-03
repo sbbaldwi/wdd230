@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/form.css">
+    <title>WDD230</title>
+</head>
+
+<body>
+    <!-- Course Header -->
+    <!-- Navigation -->
+    <!-- Footer -->
+
+    <main>
+        <h1>Form</h1>
+        <form action="record.html" method="get">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required pattern="^[A-Za-z0-9]{8,}$">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required pattern="^[A-Za-z0-9]{8,}$">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                title="Please enter a valid email address">
+
+            <label for="pageRating">Page Rating</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
+            <output for="pageRating">0</output>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
