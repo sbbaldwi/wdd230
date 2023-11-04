@@ -199,4 +199,75 @@ footer {
     color: white;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 50px;
+}
+
+.form-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #735751;
+    color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;/
+}
+
+input[type="submit"] {
+    background-color: #e7d7c1;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    border-radius: 50px;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+
+.benefits-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.benefits-container {
+    text-align: center;
+}
+
+.section-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.benefits-column {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    text-align: left;
 }
