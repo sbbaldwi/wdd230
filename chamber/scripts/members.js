@@ -2,8 +2,8 @@ const url = "https://sbbaldwin.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#Directory_cards');
 
 async function getMembersData() {
-    const response = await fetch(url);  //almacena la respuesta con el metodo tech
-    const data = await response.json();   //convierte la respuesta a un objeto JSON
+    const response = await fetch(url);
+    const data = await response.json();
     displayMembers(data.members);
     console.table(data.members);
 }
