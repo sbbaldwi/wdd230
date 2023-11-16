@@ -52,3 +52,29 @@ function displayMembers(members) {
 
 getMembersData();
 
+document.addEventListener('DOMContentLoaded', () => {
+    const baseURL = "https://sbbaldwin.github.io/wdd230/";
+    const linksURL = "https://sbbaldwin.github.io/wdd230/data/links.json";
+
+    // Asynchronous function to fetch links data
+    async function getLinks() {
+        try {
+            const response = await fetch(linksURL);
+            const data = await response.json();
+            console.log(data); // Test the JSON result
+
+            displayLinks(data); // Call the function to build out the available activity links
+        } catch (error) {
+            console.error('Error fetching links:', error);
+        }
+    }
+
+    // Function to display links
+    function displayLinks(weeks) {
+        // Your existing code for displaying links remains unchanged
+        // ...
+    }
+
+    // Call the function to fetch and display links
+    getLinks();
+});
