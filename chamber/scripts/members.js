@@ -1,80 +1,45 @@
-const url = "./data/members.json";
-const cards = document.querySelector('#cards');
+const url = "https://sbbaldwin.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector('#Directory_cards');
 
 async function getMembersData() {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        displayMembers(data.members);
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
+    const response = await fetch(url);  //almacena la respuesta con el metodo tech
+    const data = await response.json();   //convierte la respuesta a un objeto JSON
+    displayMembers(data.members);
+    console.table(data.members);
 }
 
-function displayMembers(members) {
+
+const displayMembers = (members) => {
     members.forEach((member) => {
-        const card = document.createElement('section');
 
-        member.links.forEach((link) => {
-            const linkDiv = document.createElement('div');
-            linkDiv.classList.add('link');
+        let card = document.createElement('section');
+        let logo = document.createElement('img');
+        let name = document.createElement('h3');
+        let address = document.createElement('p');
+        let phnumber = document.createElement('p');
+        let url = document.createElement('a');
 
-            const name = document.createElement('h2');
-            name.textContent = link.name;
+        logo.setAttribute('src', member.imgurl);
+        logo.setAttribute('alt', `${member.name} logo`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('height', '150');
 
-            const address = document.createElement('p');
-            address.textContent = `Address: ${link.address}`;
+        name.textContent = member.name;
+        address.textContent = member.address;
+        phnumber.textContent = member.phone;
 
-            const phone = document.createElement('p');
-            phone.textContent = `Phone: ${link['phone number']}`;
+        url.textContent = member.url;
+        url.setAttribute('href', member.url);
+        url.setAttribute('target', '_blank');
 
-            const website = document.createElement('a');
-            website.textContent = 'Website';
-            website.href = link['website url'];
-            website.target = '_blank';
-
-            const icon = document.createElement('img');
-            icon.src = link.icon;
-            icon.alt = link.name + ' Icon';
-
-            linkDiv.appendChild(name);
-            linkDiv.appendChild(address);
-            linkDiv.appendChild(phone);
-            linkDiv.appendChild(website);
-            linkDiv.appendChild(icon);
-
-            card.appendChild(linkDiv);
-        });
+        card.appendChild(logo);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phnumber);
+        card.appendChild(url);
 
         cards.appendChild(card);
     });
 }
 
 getMembersData();
-
-document.addEventListener('DOMContentLoaded', () => {
-    const baseURL = "https://sbbaldwin.github.io/wdd230/";
-    const linksURL = "https://sbbaldwin.github.io/wdd230/data/links.json";
-
-    // Asynchronous function to fetch links data
-    async function getLinks() {
-        try {
-            const response = await fetch(linksURL);
-            const data = await response.json();
-            console.log(data); // Test the JSON result
-
-            displayLinks(data); // Call the function to build out the available activity links
-        } catch (error) {
-            console.error('Error fetching links:', error);
-        }
-    }
-
-    // Function to display links
-    function displayLinks(weeks) {
-        // Your existing code for displaying links remains unchanged
-        // ...
-    }
-
-    // Call the function to fetch and display links
-    getLinks();
-});
