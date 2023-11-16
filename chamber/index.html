@@ -70,14 +70,18 @@
                 <h3>Company 3 Spotlight</h3>
             </section>
         </div>
-        <div class="weather-widget">
-            <h2>Chandler, Arizona Weather</h2>
-            <div id="weather-section">
-                <p>Temperature: <span id="temperature">75</span>°F</p>
-                <p>Wind Speed: <span id="wind-speed">5.5</span> mph</p>
-                <p>Wind Chill: <span id="wind-chill">Calculating...</span></p>
+        <div class="weather-box">
+            <h2 class="weather-heading">Chandler Weather</h2>
+            <div>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Description: <span id="description"></span></p>
+                <div class="icon-container">
+                    <span class="icon-label">Icon:</span>
+                    <img id="icon" src="" alt="">
+                </div>
             </div>
-            <script src="scripts/windchill.js"></script>
+        </div>
+        <script src="scripts/windchill.js"></script>
         </div>
     </main>
     <div id="mode">
