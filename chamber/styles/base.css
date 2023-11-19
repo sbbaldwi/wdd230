@@ -432,3 +432,8 @@ input[type="hidden"] {
     right: 10px;
     font-size: 20px;
 }
+
+.meetandgreet {
+    font-size: 1.7em;
+    color: black;
+}
