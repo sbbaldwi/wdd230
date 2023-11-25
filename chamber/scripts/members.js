@@ -1,45 +1,128 @@
 const url = "https://sbbaldwin.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector('#Directory_cards');
+mode: 'no-cors'
+const directory = document.querySelector('.members_grid');
 
-async function getMembersData() {
-    const response = await fetch(url); 
-    const data = await response.json(); 
-    displayMembers(data.members);
-    console.table(data.members);
+async function getMembersDataGrid() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembersGrid(data.members);
 }
+getMembersDataGrid();
+
+const displayMembersGrid = (members) => {
+    const sections = directory.querySelectorAll('.section');
+
+    members.forEach((member, index) => {
+        const section = sections[index];
+        const name = section.querySelector('.name');
+        const membership = section.querySelector('.membership');
+        const image = section.querySelector('.image');
+        const address = section.querySelector('.address');
+        const phone = section.querySelector('.phone');
+        const website = section.querySelector('.website');
+
+        name.textContent = `${member.name}`;
+        membership.textContent = `${member.level}`;
+
+        image.src = member.icon || 'path/to/placeholder-image.jpg';
+        image.alt = member.name || 'Default Alt Text';
+        /*image.setAttribute('src', member.icon);
+        image.setAttribute('alt', member.name);*/
+        image.setAttribute('width', '150');
+        image.setAttribute('height', 'auto');
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phoneNumber}`;
+        website.textContent = `${member.website}`;
+        website.setAttribute('href', member.website);
+        website.setAttribute('target', '_blank');
+    });
+};
 
 
-const displayMembers = (members) => {
+const second_directory = document.querySelector('.members_list');
+
+async function getMembersDataList() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembersList(data.members);
+}
+getMembersDataList();
+
+const displayMembersList = (members) => {
     members.forEach((member) => {
+        let whole = document.createElement('section');
+        let name = document.createElement('p');
+        let membership = document.createElement('p');
+        let website = document.createElement('a');
 
-        let card = document.createElement('section');
-        let logo = document.createElement('img');
-        let name = document.createElement('h3');
-        let address = document.createElement('p');
-        let phnumber = document.createElement('p');
-        let url = document.createElement('a');
+        name.textContent = `${member.name}`
+        membership.textContent = `${member.membersevel}`
+        website.textContent = `${member.website}`;
+        website.setAttribute('href', member.website);
+        website.setAttribute('target', '_blank');
 
-        logo.setAttribute('src', member.imgurl);
-        logo.setAttribute('alt', `${member.name} logo`);
-        logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('height', '150');
+        whole.appendChild(name);
+        whole.appendChild(membership);
+        whole.appendChild(website);
 
-        name.textContent = member.name;
-        address.textContent = member.address;
-        phnumber.textContent = member.phone;
+        second_directory.appendChild(whole);
+    });
+};
 
-        url.textContent = member.url;
-        url.setAttribute('href', member.url);
-        url.setAttribute('target', '_blank');
 
-        card.appendChild(logo);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phnumber);
-        card.appendChild(url);
 
-        cards.appendChild(card);
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".members_grid");
+
+
+let names = document.querySelectorAll('.name');
+let memberships = document.querySelectorAll('.membership');
+let images = document.querySelectorAll('.image');
+let addresses = document.querySelectorAll('.address');
+let phones = document.querySelectorAll('.phone');
+
+gridbutton.addEventListener("click", () => {
+    display.classList.add("members_grid");
+    display.classList.remove("members_list");
+
+
+    names.forEach((name) => {
+        name.classList.add("dissapear");
+    });
+    memberships.forEach((membership) => {
+        membership.classList.add("dissapear");
+    });
+    images.forEach((image) => {
+        image.classList.remove("dissapear");
+    });
+    addresses.forEach((address) => {
+        address.classList.remove("dissapear");
+    });
+    phones.forEach((phone) => {
+        phone.classList.remove("dissapear");
+    });
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+    display.classList.add("members_list");
+    display.classList.remove("members_grid");
+
+    names.forEach((name) => {
+        name.classList.remove("dissapear");
+    });
+    memberships.forEach((membership) => {
+        membership.classList.remove("dissapear");
+    });
+    images.forEach((image) => {
+        image.classList.add("dissapear");
+    });
+    addresses.forEach((address) => {
+        address.classList.add("dissapear");
+    });
+    phones.forEach((phone) => {
+        phone.classList.add("dissapear");
     });
 }
-
-getMembersData();
