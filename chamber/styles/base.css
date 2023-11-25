@@ -490,15 +490,25 @@ p {
 
 #section3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: darkgrey;
     color: white;
     padding: 20px;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
 }
 
 .spotlight-card {
-    flex: 0 0 auto;
-    width: calc(33.33% - 50px);
-    padding: 20px;
-    box-sizing: border-box;
+    width: 500px;
+    text-align: center;
+    margin: 0 25px;
+}
+
+.spotlight-card img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
