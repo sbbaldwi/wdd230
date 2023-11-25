@@ -13,7 +13,7 @@
             "address": "4500 S. Dobson Rd., Chandler, AZ",
             "phone": "(480) 786-4011",
             "websiteURL": "https://www.intel.com/",
-            "imageURL": "/images/intel/webp",
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/intel.webp",
             "membershipLevel": "Gold"
         },
         {
@@ -21,7 +21,7 @@
             "address": "1004 W Chandler Blvd",
             "phone": "(480) 899-2692",
             "websiteURL": "https://www.wellsfargo.com/",
-            "imageURL": "/images/wells.webp",
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/wells.webp",
             "membershipLevel": "Bronze"
         },
         {
@@ -29,7 +29,7 @@
             "address": "3000 W. One Payment Way",
             "phone": "(480) 505-6399",
             "websiteURL": "https://www.paypal.com",
-            "imageURL": "/images/paypal.webp",
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/paypal.webp",
             "membershipLevel": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "address": "5005 E. McDowell Rd.",
             "phone": "(480) 356-2400",
             "websiteURL": "https://www.northropgrumman.com/",
-            "imageURL": "/images/norhrop.webp",
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/northrop.webp",
             "membershipLevel": "NP Member"
         },
         {
@@ -45,7 +45,7 @@
             "address": "1260 S. Spectrum Blvd.",
             "phone": "(866) 800-0004",
             "websiteURL": "htpps://www.keap.com",
-            "imageURL": "/images/infusion.webp",
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/infusion.webp",
             "membershipLevel": "Gold"
         },
         {
@@ -53,7 +53,7 @@
             "address": "3401 W Frye Rd # 5",
             "phone": "(800) 880-1077",
             "websiteURL": "https://www.verizon.com",
-            "imageURL": "/images/verizon.webp",
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/verizon.webp",
             "membershipLevel": "Silver"
         }
     ]
