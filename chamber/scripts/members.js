@@ -1,5 +1,5 @@
-const url = "https://sbbaldwin.github.io/wdd230/chamber/data/members.json";
-mode: 'no-cors'
+const url = "https://github.com/sbbaldwi/wdd230/blob/main/chamber/data/members.json";
+
 const directory = document.querySelector('.members_grid');
 
 async function getMembersDataGrid() {
@@ -15,10 +15,10 @@ const displayMembersGrid = (members) => {
     members.forEach((member, index) => {
         const section = sections[index];
         const name = section.querySelector('.name');
-        const membership = section.querySelector('.membership');
-        const image = section.querySelector('.image');
+        const membership = section.querySelector('.level');
+        const image = section.querySelector('.icon');
         const address = section.querySelector('.address');
-        const phone = section.querySelector('.phone');
+        const phone = section.querySelector('.phoneNumber');
         const website = section.querySelector('.website');
 
         name.textContent = `${member.name}`;
@@ -26,8 +26,8 @@ const displayMembersGrid = (members) => {
 
         image.src = member.icon || 'path/to/placeholder-image.jpg';
         image.alt = member.name || 'Default Alt Text';
-        /*image.setAttribute('src', member.icon);
-        image.setAttribute('alt', member.name);*/
+        image.setAttribute('src', member.icon);
+        image.setAttribute('alt', member.name);
         image.setAttribute('width', '150');
         image.setAttribute('height', 'auto');
         address.textContent = `${member.address}`;
@@ -56,7 +56,7 @@ const displayMembersList = (members) => {
         let website = document.createElement('a');
 
         name.textContent = `${member.name}`
-        membership.textContent = `${member.membersevel}`
+        membership.textContent = `${member.level}`
         website.textContent = `${member.website}`;
         website.setAttribute('href', member.website);
         website.setAttribute('target', '_blank');
@@ -77,10 +77,10 @@ const display = document.querySelector(".members_grid");
 
 
 let names = document.querySelectorAll('.name');
-let memberships = document.querySelectorAll('.membership');
+let memberships = document.querySelectorAll('.level');
 let images = document.querySelectorAll('.image');
 let addresses = document.querySelectorAll('.address');
-let phones = document.querySelectorAll('.phone');
+let phones = document.querySelectorAll('.phoneNumber');
 
 gridbutton.addEventListener("click", () => {
     display.classList.add("members_grid");
@@ -90,8 +90,8 @@ gridbutton.addEventListener("click", () => {
     names.forEach((name) => {
         name.classList.add("dissapear");
     });
-    memberships.forEach((membership) => {
-        membership.classList.add("dissapear");
+    memberships.forEach((level) => {
+        level.classList.add("dissapear");
     });
     images.forEach((image) => {
         image.classList.remove("dissapear");
@@ -99,8 +99,8 @@ gridbutton.addEventListener("click", () => {
     addresses.forEach((address) => {
         address.classList.remove("dissapear");
     });
-    phones.forEach((phone) => {
-        phone.classList.remove("dissapear");
+    phones.forEach((phoneNumber) => {
+        phoneNumber.classList.remove("dissapear");
     });
 });
 
@@ -113,8 +113,8 @@ function showList() {
     names.forEach((name) => {
         name.classList.remove("dissapear");
     });
-    memberships.forEach((membership) => {
-        membership.classList.remove("dissapear");
+    memberships.forEach((level) => {
+        level.classList.remove("dissapear");
     });
     images.forEach((image) => {
         image.classList.add("dissapear");
@@ -122,7 +122,7 @@ function showList() {
     addresses.forEach((address) => {
         address.classList.add("dissapear");
     });
-    phones.forEach((phone) => {
-        phone.classList.add("dissapear");
+    phones.forEach((phoneNumber) => {
+        phoneNumber.classList.add("dissapear");
     });
 }
