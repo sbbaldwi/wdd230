@@ -9,11 +9,10 @@
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="Bri Christiansen WDD230 Chamber of Commerce Site" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/chamber" />
-    <meta propert="og:image"
-        content="https://www.google.com/search?sca_esv=573494380&sxsrf=AM9HkKmfIh7jORqW187DORIvz4eoW_nniA:1697311999290&q=chandler+chamber+of+commerce&tbm=isch&source=lnms&sa=X&ved=2ahUKEwibp6n2o_aBAxWXNzQIHZkaB4AQ0pQJegQIDxAB&biw=1536&bih=707&dpr=1.25#imgrc=eTB3NNzYvNhvBM" />
+    <meta property="og:title" content="Bri Christiansen WDD230 Chamber of Commerce Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sbbaldwi/wdd230/main/chamber/images/hero.webp">
     <title>Chandler Chamber of Commerce</title>
 </head>
 
@@ -30,7 +29,7 @@
     <script src="../scripts/hammenu.js"></script>
     <header>
         <h1>Chandler Chamber of Commerce</h1>
-        <a href="join.html"></a><button>Join Now!</button></a>
+        <a href="join.html"></a><button>Join Now!</button>
     </header>
     <main>
         <div class="simpleGrid">
@@ -59,15 +58,21 @@
             <h2 id="companyspotlight">Company Spotlight</h2>
         </div>
         <div id="section3">
-            <section>
-                <h3>Company 1 Spotlight</h3>
-
+            <section id="spotlight-Intel" class="spotlight-card">
+                <h3>Intel</h3>
+                <img src="images/intel.webp" alt="intel logo" style="max-width: 250px;">
+                <p>It has been an exciting month for Intel as they recently announced that Lunar Lake is on track to
+                    release in 2024!</p>
             </section>
-            <section>
-                <h3>Comany 2 Spotlight</h3>
+            <section id="Infusion" class="spotlight-card">
+                <h3>Infusion</h3>
+                <img src="images/infusion.webp" alt="infusion logo" style="max-width: 250px;">
+                <p>Infusion has recently had an exciting rebrand and now is called Keap!</p>
             </section>
-            <section>
-                <h3>Company 3 Spotlight</h3>
+            <section id="northrop" class="spotlight-card">
+                <h3>Northrop Grumman</h3>
+                <img src="images/northrop.webp" alt="northrop logo" style="max-width: 250px;">
+                <p>Congrats to Northrop Grumman for celebrating their 5 year anniversary here in Chandler!</p>
             </section>
         </div>
         <div class="banner" id="banner">
@@ -82,12 +87,11 @@
                 <p>Description: <span id="description"></span></p>
                 <div class="icon-container">
                     <span class="icon-label">Icon:</span>
-                    <img id="icon" src="" alt="">
+                    <img id="icon" alt="" src="wells.webp">
                 </div>
             </div>
         </div>
         <script src="scripts/windchill.js"></script>
-        </div>
     </main>
     <div id="mode">
         🕶️
