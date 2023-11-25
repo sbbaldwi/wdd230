@@ -442,9 +442,29 @@ div.section {
     text-align: center;
 }
 
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 
 #discover-images img {
-    padding-top: 30px
+    padding-top: 30px;
+    max-width: 250px;
 }
 
 #discover-message,
@@ -452,10 +472,18 @@ div.section {
 #discover-events {
     padding: 1rem;
     margin: 1rem 0;
-    background-color: var(--hover-color);
+    background-color: rgb(69, 68, 68);
+    color: white;
+}
+
+#discover-message h3,
+#discover-infO h3,
+#discover-events h3 {
     color: white;
 }
 
 #discover-events p {
     color: white;
+    max-width: 400px;
+    margin: 0 auto;
 }
