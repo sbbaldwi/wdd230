@@ -1,0 +1,151 @@
+body {
+    font-family: 'Abhaya Libre', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 25px;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 100px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    width: 45%;
+    left: 0;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 100px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 75px;
+}
+
+.blurbs-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distributes space between items */
+    margin-top: 30px;
+}
+
+.blurb {
+    width: calc(33.33% - 50px);
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blurb-content {
+    flex: 1;
+    /* Distributes remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.blurb h3,
+.blurb p {
+    margin: 0;
+}
+
+/* Styling for each blurb based on index */
+.blurb:nth-child(1),
+.blurb:nth-child(3) {
+    background-color: #001d3d;
+    color: white;
+}
+
+.blurb:nth-child(2) {
+    background-color: #ffc300;
+    color: black;
+}
+
+/* Image style */
+.blurb img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+/* Image style */
+.blurb img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    width: 150px;
+}
