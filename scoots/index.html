@@ -19,7 +19,7 @@
 
 <body>
     <div class="message-container" id="temperature-message">
-        <span class="close" onclick="closeTemperatureMessage()">×</span>
+        <span class="close">×</span>
         <p>Today's high temperature: <span id="high-temperature"></span></p>
     </div>
     <header>
@@ -32,10 +32,10 @@
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Rentals</a>
+                    <a href="rentals.html" class="nav-link">Rentals</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Reservations</a>
+                    <a href="reservations.html" class="nav-link">Reservations</a>
                 </li>
                 <li class="nav-item">
                     <a href="contact-us.html" class="nav-link">Contact</a>
@@ -48,80 +48,88 @@
             </div>
         </nav>
     </header>
-    <div class="hero-container">
-        <div class="overlay"></div>
-        <img class="hero-image" src="images/heroimg.jpg" alt="Hero Image" width="25">
-        <div class="hero-text">
-            <h1>Welcome to Scoots</h1>
-            <p>Explore Cozumel in style. From winding coastal roads to hidden inlets, our fleet of premium vehicles
-                awaits to whisk you away on an unforgettable journey.</p>
-            <button class="custom-button">Explore Now</button>
-        </div>
-    </div>
-    <div class="main-content">
-        <section>
-            <h2>Rental Options</h2>
-            <div class="blurbs-container">
-                <div class="blurb">
-                    <img src="images/hondalogo.png" alt="Placeholder Image 1">
-                    <h3>Honda Motor Scooters</h3>
-                    <p>At Scoots, our Honda motor scooter rentals offer the perfect blend of convenience and adventure
-                        for exploring Cozumel. Glide through the island's picturesque streets and scenic routes aboard
-                        our Honda Metropolitan, perfect for solo adventurers seeking effortless mobility. </p>
-                </div>
-
-                <!-- Second Blurb -->
-                <div class="blurb">
-                    <img src="images/side-by-side-removebg-preview.png" alt="Placeholder Image 2">
-                    <h3>Side By Side ATVs</h3>
-                    <p>At Scoots, our side-by-side ATV rentals elevate your Cozumel adventure to new heights. Experience
-                        the rugged beauty of the island as you bond with loved ones on an exhilarating ride, creating
-                        lasting memories against the stunning backdrop of Cozumel's scenic landscapes.</p>
-                </div>
-
-                <!-- Third Blurb -->
-                <div class="blurb">
-                    <img src="images/jeep-removebg-preview.png" alt="Placeholder Image 3">
-                    <h3>Jeep</h3>
-                    <p>At Scoots, our Jeep rentals offer the perfect blend of adventure and comfort for exploring
-                        Cozumel's diverse landscapes. Whether it's a scenic coastal drive or an off-the-beaten-path
-                        adventure, our Jeep rentals provide the ultimate way to embrace the island's natural beauty.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section2">
-            <img src="images/scooter.jpg" alt="scooterimg" class="scooterimg">
-            <div class="text-container">
-                <h2>Embrace The Adventure!</h2>
-                <p>Embrace the thrill of exploration along the stunning coast of Cozumel, Mexico, with Scoots Motor
-                    Scooter Rentals. Feel the ocean breeze as you embark on an exhilarating adventure, navigating
-                    winding coastal roads and uncovering hidden gems. Our premium scooter fleet ensures effortless
-                    mobility, empowering you to soak in the island's picturesque landscapes, from tranquil shorelines to
-                    vibrant local hotspots. Let Scoots be your companion as you create unforgettable moments,
-                    discovering the beauty of Cozumel's shores in an experience that's both liberating and
-                    unforgettable.</p>
-                <button class="custom-button">Make A Reservation!</button>
-            </div>
-        </section>
-        <div class="weather-container">
-            <h2>Be sure to check the weather prior to your ride!</h2>
-            <div class="weather-info">
-                <h2>Weather in Cozumel</h2>
-                <div class="weather-details">
-                    <div class="current-weather">
-                        <p>Current Temperature: <span id="current-temperature"></span></p>
-                        <p>Current Humidity: <span id="current-humidity"></span></p>
-                        <p>Current Description: <span id="current-description"></span></p>
-                    </div>
-                    <div class="forecast" id="forecast-section">
-                        <h3>Next Day's Forecast at 3:00 PM:</h3>
-                        <p>Temperature: <span id="next-day-temperature"></span></p>
-                        <p>Description: <span id="next-day-description"></span></p>
-                    </div>
-                </div>
+    <main>
+        <div class="hero-container">
+            <div class="overlay"></div>
+            <img class="hero-image" src="images/heroimg.jpg" alt="Hero Image" width="25">
+            <div class="hero-text">
+                <h1>Welcome to Scoots</h1>
+                <p>Explore Cozumel in style. From winding coastal roads to hidden inlets, our fleet of premium vehicles
+                    awaits to whisk you away on an unforgettable journey.</p>
+                <button class="custom-button">Explore Now</button>
             </div>
         </div>
-    </div>
+        <div class="main-content">
+            <section>
+                <h2>Rental Options</h2>
+                <div class="blurbs-container">
+                    <div class="blurb">
+                        <img src="images/hondalogo.png" alt="Placeholder Image 1">
+                        <h3>Honda Motor Scooters</h3>
+                        <p>At Scoots, our Honda motor scooter rentals offer the perfect blend of convenience and
+                            adventure
+                            for exploring Cozumel. Glide through the island's picturesque streets and scenic routes
+                            aboard
+                            our Honda Metropolitan, perfect for solo adventurers seeking effortless mobility. </p>
+                    </div>
+
+                    <!-- Second Blurb -->
+                    <div class="blurb">
+                        <img src="images/side-by-side-removebg-preview.png" alt="Placeholder Image 2">
+                        <h3>Side By Side ATVs</h3>
+                        <p>At Scoots, our side-by-side ATV rentals elevate your Cozumel adventure to new heights.
+                            Experience
+                            the rugged beauty of the island as you bond with loved ones on an exhilarating ride,
+                            creating
+                            lasting memories against the stunning backdrop of Cozumel's scenic landscapes.</p>
+                    </div>
+
+                    <!-- Third Blurb -->
+                    <div class="blurb">
+                        <img src="images/jeep-removebg-preview.png" alt="Placeholder Image 3">
+                        <h3>Jeep</h3>
+                        <p>At Scoots, our Jeep rentals offer the perfect blend of adventure and comfort for exploring
+                            Cozumel's diverse landscapes. Whether it's a scenic coastal drive or an off-the-beaten-path
+                            adventure, our Jeep rentals provide the ultimate way to embrace the island's natural beauty.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <img src="images/scooter.jpg" alt="scooterimg" class="scooterimg">
+                <div class="text-container">
+                    <h2>Embrace The Adventure!</h2>
+                    <p>Embrace the thrill of exploration along the stunning coast of Cozumel, Mexico, with Scoots Motor
+                        Scooter Rentals. Feel the ocean breeze as you embark on an exhilarating adventure, navigating
+                        winding coastal roads and uncovering hidden gems. Our premium scooter fleet ensures effortless
+                        mobility, empowering you to soak in the island's picturesque landscapes, from tranquil
+                        shorelines to
+                        vibrant local hotspots. Let Scoots be your companion as you create unforgettable moments,
+                        discovering the beauty of Cozumel's shores in an experience that's both liberating and
+                        unforgettable.</p>
+                    <button class="custom-button">Make A Reservation!</button>
+                </div>
+            </section>
+            <div class="weather-container">
+                <h2>Be sure to check the weather prior to your ride!</h2>
+                <div class="weather-info">
+                    <h2>Weather in Cozumel</h2>
+                    <div class="weather-details">
+                        <div class="current-weather">
+                            <p>Current Temperature: <span id="current-temperature"></span></p>
+                            <p>Current Humidity: <span id="current-humidity"></span></p>
+                            <p>Current Description: <span id="current-description"></span></p>
+                        </div>
+                        <div class="forecast" id="forecast-section">
+                            <h3>Next Day's Forecast at 3:00 PM:</h3>
+                            <p>Temperature: <span id="next-day-temperature"></span></p>
+                            <p>Description: <span id="next-day-description"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <p>&copy;<span id="year"></span> Scoots</p>
         <p>Last Modified: <span id="lastModified"></span></p>

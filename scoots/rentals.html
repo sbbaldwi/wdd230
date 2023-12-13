@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development by Bri Christiansen, Course assignment Portal">
     <meta name="author" content="Bri Christiansen">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="./styles/small.css">
-    <link rel="icon" href="favicon.ico">
-    <meta content="WDD 230 - Web Frontend Development, Bri Christiansen, Scoots website">
     <meta property="og:title" content="Scoots website">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://raw.githubusercontent.com/sbbaldwi/wdd230/main/images/profilePic.webp">
     <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/">
-    <meta name="description">
+    <meta name="description"
+        content="This website is for a motor scooter rental company in Cozumel Mexico called Scoots. This website is intended for my final project in WDD230 at BYU-Idaho.">
+    <title>Scoots</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/small.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -45,10 +44,19 @@
             </div>
         </nav>
     </header>
-    <main class="thank-you">
-        <h1>Thank You For Contacting us!</h1>
-        <p>We will get in touch with you shortly</p>
-        <button class="custom-button">Back To Homepage</button>
+    <main>
+        <div class="hero-container">
+            <div class="overlay1"></div>
+            <img class="hero-image" src="images/scooterrentals.jpg" alt="motor scooter rentals in Cozumel Mexico" width="25">
+            <div class="hero-text">
+                <h1>Cozumel Motor Scooter Rentals</h1>
+                <p>Scooter rentals from Scoots offer an incredible way for people to explore the stunning coast of
+                    Cozumel, Mexico. These easy-to-handle scooters provide riders with the freedom to
+                    navigate the island's coastal roads at their own pace, soaking in the breathtaking ocean views and
+                    stopping at various scenic spots along the way. </p>
+                <button class="custom-button">Explore Now</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Scoots</p>
@@ -57,10 +65,10 @@
             <a target="_blank" href="https://www.facebook.com/">
                 <img src="images/facebook.png" alt="Facebook Logo" loading="lazy">
             </a>
-            <a target="_blank" href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/">
                 <img src="images/instagram.png" alt="Facebook Logo" loading="lazy">
             </a>
-            <a target="_blank" href="https://www.tiktok.com/en/">
+            <a href="https://www.tiktok.com/en/">
                 <img src="images/tiktok.png" alt="Facebook Logo" loading="lazy">
             </a>
         </div>
@@ -68,7 +76,8 @@
     <script src="scripts/lastmod.js"></script>
     <script src="scripts/hammenu.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/googlemaps.js"></script>
+    <script src="scripts/message.js"></script>
+    <script src="scripts/navscroll.js"></script>
 </body>
 
 </html>
