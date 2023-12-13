@@ -2,57 +2,63 @@
     "rentals": [
         {
             "name": "Honda Metro Scooter",
+            "category": "Scooter",
             "max_persons": 1,
             "half_day_reservation": 20,
             "full_day_reservation": 30,
             "half_day_walk_in": 25,
             "full_day_walk_in": 35,
-            "imageURL": ""
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondametroscooter.webp"
         },
         {
             "name": "Honda Dio Scooter",
+            "category": "Scooter",
             "max_persons": 2,
             "half_day_reservation": 30,
             "full_day_reservation": 40,
             "half_day_walk_in": 35,
             "full_day_walk_in": 45,
-            "imageURL": "https://github.com/sbbaldwi/wdd230/blob/main/scoots/images/hondadioscooter.jpg"
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondadioscooter.webp"
         },
         {
             "name": "Honda PCX150 Scooter",
+            "category": "Scooter",
             "max_persons": 2,
             "half_day_reservation": 40,
             "full_day_reservation": 50,
             "half_day_walk_in": 45,
             "full_day_walk_in": 55,
-            "imageURL": ""
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondapcx150scooter.webp"
         },
         {
             "name": "Honda Pioneer ATV",
+            "category":"ATV",
             "max_persons": 4,
             "half_day_reservation": 50,
             "full_day_reservation": 70,
             "half_day_walk_in": 60,
             "full_day_walk_in": 80,
-            "imageURL": ""
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondapioneeratv.webp"
         },
         {
             "name": "Jeep Wrangler - 4 door with a/c",
+            "category": "Jeep",
             "max_persons": 5,
             "half_day_reservation": 70,
             "full_day_reservation": 100,
             "half_day_walk_in": 85,
             "full_day_walk_in": 125,
-            "imageURL": ""
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/jeepwrangler4door.webp"
         },
         {
             "name": "Jeep Wrangler - 2 door",
+            "category": "Jeep",
             "max_persons": 4,
             "half_day_reservation": 60,
             "full_day_reservation": 85,
             "half_day_walk_in": 70,
             "full_day_walk_in": 90,
-            "imageURL": ""
+            "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/jeepwrangler2door.webp"
         }
     ]
 }
