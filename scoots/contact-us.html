@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development by Bri Christiansen, Course assignment Portal">
+    <meta name="author" content="Bri Christiansen">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/small.css">
+    <link rel="icon" href="favicon.ico">
+    <meta content="WDD 230 - Web Frontend Development, Bri Christiansen, Scoots website">
+    <meta property="og:title" content="Scoots website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sbbaldwi/wdd230/main/images/profilePic.webp">
+    <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/">
+    <meta name="description">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo-removebg-preview.png" alt="Scoots Logo">
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out using the form below:</p>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form" action="#" method="post">
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                    </div>
+                    <button type="submit" class="custom-button">Submit</button>
+                </form>
+            </div>
+            <div class="locations">
+                <h3 class="location1">📍 Location Ferry to Playa del Carmen-Cozumel</h3>
+                <gmp-map center="20.625181198120117,-103.24676513671875" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="20.625181198120117,-103.24676513671875" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
+                <script async
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt30bYvDvWn17B5hW5y8OuDkfrCIs3iTA&callback=console.debug&libraries=maps,marker&v=beta"></script>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Scoots</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <div class="social-media-links">
+            <a target="_blank" href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="Facebook Logo" loading="lazy">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="Facebook Logo" loading="lazy">
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/en/">
+                <img src="images/tiktok.png" alt="Facebook Logo" loading="lazy">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/lastmod.js"></script>
+    <script src="scripts/hammenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/googlemaps.js"></script>
+</body>
+
+</html>

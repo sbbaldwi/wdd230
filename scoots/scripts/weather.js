@@ -2,8 +2,8 @@ const apiKey = 'c6788a8407a7cc25e447409c0992dd7a';
 const city = 'Cozumel';
 const country = 'MX';
 
-const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=imperial&appid=${apiKey}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&appid=${apiKey}`;
+const currentWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=imperial&appid=${apiKey}`;
+const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&appid=${apiKey}`;
 
 // Function to convert UNIX timestamp to readable date and time
 const formatTime = (unixTimestamp) => {
