@@ -25,16 +25,11 @@ const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&
 fetch(forecastUrl)
     .then((response) => response.json())
     .then((data) => {
-        // Filter forecast data for the next day at 3:00 PM
         const nextDayForecast = data.list.find((forecast) => {
             const forecastDateTime = new Date(forecast.dt_txt);
-            return forecastDateTime.getHours() === 15; // Check for 3:00 PM
+            return forecastDateTime.getHours() === 15;
         });
-
-        // Display next day's forecasted temperature
         document.getElementById('next-day-temperature').textContent = `${nextDayForecast.main.temp}°C`;
-
-        // Display next day's weather description
         document.getElementById('next-day-description').textContent = nextDayForecast.weather[0].description;
     })
     .catch((error) => {

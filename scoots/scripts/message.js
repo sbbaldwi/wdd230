@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var temperatureMessage = document.getElementById('temperature-message');
     var highTemperature = document.getElementById('high-temperature');
 
-    // Fetch temperature data
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
         .then(response => response.json())
         .then(data => {

@@ -532,7 +532,6 @@ button {
 .prices div {
     width: 48%;
     text-align: center;
-    /* Adjust for spacing */
 }
 
 .prices h4 {
@@ -547,7 +546,6 @@ button {
 }
 
 /*JSON styles*/
-/* CSS for card container */
 .rentals-container {
     display: flex;
     justify-content: center;
