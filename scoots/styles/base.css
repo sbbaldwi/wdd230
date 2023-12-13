@@ -159,7 +159,7 @@ h1 {
     font-size: 100px;
 }
 
-.custom-button {
+.allButtons {
     background-color: #001d3d;
     color: white;
     border: none;
@@ -173,19 +173,19 @@ h1 {
     cursor: pointer;
 }
 
-.custom-button:hover {
+.allButtons:hover {
     border-radius: 20px;
     transform: scale(1.1);
 }
 
-.custom-button::after {
+.allButtons::after {
     content: '→';
     opacity: 0;
     margin-left: 5px;
     transition: opacity 0.3s ease, margin-left 0.3s ease;
 }
 
-.custom-button:hover::after {
+.allButtons:hover::after {
     opacity: 1;
     margin-left: 8px;
 }
@@ -452,6 +452,9 @@ button {
 }
 
 .locations {
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -467,6 +470,11 @@ button {
 .location-title {
     text-align: center;
     font-size: 1em;
+}
+
+.location iframe {
+    width: 100%;
+    max-width: 100%;
 }
 
 /*rentals styles*/
