@@ -1,68 +1,76 @@
 @media only screen and (max-width: 1024px) {
 
-    nav {
-        padding: 5px;
+    .hamburger {
+        display: block;
     }
 
-    .logo img {
-        width: 60px;
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
-    ul {
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg)
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg)
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 100%;
+        gap: 0;
         flex-direction: column;
+        background-color: #001d3d;
+        color: white;
+        width: 100%;
         text-align: center;
+        transition: 0.3s;
     }
 
-    li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .nav-item {
+        margin: 16px 0;
     }
 
+    .nav-menu.active {
+        left: 0;
+        height: 200px;
+        top: 150px;
+        flex-direction: column;
+    }
+
+    .nav-menu.active .nav-link {
+        color: white;
+    }
 
     h1 {
         font-size: 40px;
     }
 
-    .hero-container {
-        position: relative;
-    }
-
-    .hero-image {
-        width: 100vw;
-        height: auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: black;
-        opacity: 50%;
-    }
-
-    .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        width: 90%;
-        text-align: center;
-        font-size: 16px;
-    }
-
     .hero-text h1 {
-        font-size: 4vw;
-        margin-bottom: 2vw;
-        text-align: center;
+        font-size: 6vw;
     }
 
     .hero-text p {
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+
+    .hero-container button {
+        font-size: 2.5vw;
+        padding: 1.5vw 3vw;
+    }
+
+    .hero-container {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-top: 0;
+        transition: margin-top 0.3s ease;
+    }
+
+    .hero-container.menu-open {
+        margin-top: 193px;
     }
 
     .blurbs-container {
@@ -107,24 +115,6 @@
         width: 100%;
     }
 
-    nav {
-        width: 100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .nav-links {
-        text-align: center;
-    }
-
     .footer {
         text-align: center;
         padding: 20px 0;
@@ -143,12 +133,12 @@
         align-items: center;
     }
 
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
+    /* contact page styles*/
+    .locations {
+        flex-direction: column;
     }
 
-    .nav-links {
-        display: none;
+    .location {
+        flex-basis: 100%;
     }
 }

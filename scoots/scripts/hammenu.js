@@ -1,7 +1,15 @@
-const hamButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.nav-links');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const heroHeader = document.querySelector(".hero-container");
 
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    heroHeader.classList.toggle("menu-open");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    heroHeader.classList.remove("menu-open");
+}))

@@ -4,70 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development by Bri Christiansen, Course assignment Portal">
     <meta name="author" content="Bri Christiansen">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="./styles/small.css">
-    <link rel="icon" href="favicon.ico">
-    <meta content="WDD 230 - Web Frontend Development, Bri Christiansen, Scoots website">
     <meta property="og:title" content="Scoots website">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://raw.githubusercontent.com/sbbaldwi/wdd230/main/images/profilePic.webp">
     <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/">
-    <meta name="description">
+    <meta name="description"
+        content="This website is for a motor scooter rental company in Cozumel Mexico called Scoots. This website is intended for my final project in WDD230 at BYU-Idaho.">
+    <title>Scoots</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/small.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <img src="images/logo-removebg-preview.png" alt="Scoots Logo">
             </div>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Rentals</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Rentals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact-us.html" class="nav-link">Contact</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="contact-section">
-            <h1>Contact Us</h1>
-            <p>We'd love to hear from you! Reach out using the form below:</p>
-            <div class="contact-form-container">
-                <form id="contactForm" class="contact-form" action="#" method="post">
-                    <div class="input-container">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="comment">Comment</label>
-                        <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
-                    </div>
-                    <button type="submit" class="custom-button">Submit</button>
-                </form>
+        <div class="hero-container">
+            <div class="overlay"></div>
+            <img class="hero-image" src="images/cozumel.jpg" alt="Hero Image" width="25">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p>Reach out with your name, email, and a brief message and we will get back to you shortly!</p>
             </div>
-            <div class="locations">
-                <h3 class="location1">📍 Location Ferry to Playa del Carmen-Cozumel</h3>
-                <gmp-map center="20.625181198120117,-103.24676513671875" zoom="14" map-id="DEMO_MAP_ID">
-                    <gmp-advanced-marker position="20.625181198120117,-103.24676513671875" title="My location">
-                    </gmp-advanced-marker>
-                </gmp-map>
-                <script async
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt30bYvDvWn17B5hW5y8OuDkfrCIs3iTA&callback=console.debug&libraries=maps,marker&v=beta"></script>
+        </div>
+        <div class="contact-form-container">
+            <form id="contactForm" class="contact-form" action="#" method="post">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-container">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                </div>
+                <button type="submit" class="custom-button">Submit</button>
+            </form>
+        </div>
+        <div class="locations">
+            <div class="location">
+                <h3 class="location-title">📍 Location Ferry to Playa del Carmen-Cozumel</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL_1" width="400" height="300"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-        </section>
+            <div class="location">
+                <h3 class="location-title">📍 Terminal Puerta Maya</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL_2" width="400" height="300"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Scoots</p>

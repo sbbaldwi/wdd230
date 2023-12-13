@@ -1,74 +1,42 @@
 const apiKey = 'c6788a8407a7cc25e447409c0992dd7a';
 const city = 'Cozumel';
-const country = 'MX';
-
-const currentWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=imperial&appid=${apiKey}`;
-const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&appid=${apiKey}`;
-
-// Function to convert UNIX timestamp to readable date and time
-const formatTime = (unixTimestamp) => {
-    const date = new Date(unixTimestamp * 1000);
-    return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
-};
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 // Fetch current weather data
-fetch(currentWeatherUrl)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        const currentTemperature = data.main.temp;
-        const currentHumidity = data.main.humidity;
-        const currentDescription = data.weather[0].description;
-        const currentIconCode = data.weather[0].icon;
+fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+        // Display current temperature
+        document.getElementById('current-temperature').textContent = `${data.main.temp}°C`;
 
-        // Display current weather information
-        document.getElementById('current-temperature').textContent = currentTemperature + "°F";
-        document.getElementById('current-humidity').textContent = currentHumidity + "%";
-        document.getElementById('current-description').textContent = currentDescription;
-        document.getElementById('current-icon').setAttribute('src', `http://openweathermap.org/img/w/${currentIconCode}.png`);
-        document.getElementById('current-icon').setAttribute('alt', currentDescription);
+        // Display current humidity
+        document.getElementById('current-humidity').textContent = `${data.main.humidity}%`;
+
+        // Display current weather description
+        document.getElementById('current-description').textContent = data.weather[0].description;
     })
-    .catch(error => {
-        console.error('There was a problem fetching the current weather data:', error);
+    .catch((error) => {
+        console.log('Error fetching weather data:', error);
     });
 
+// Fetch weather forecast for the next day at 3:00 PM
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+
 fetch(forecastUrl)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log(data); // Check the data received from the API
-
-        const currentDate = new Date();
-
-        const nextDayForecast = data.list.find(entry => {
-            const date = new Date(entry.dt * 1000);
-            return date.getDate() === currentDate.getDate() + 1 && date.getHours() === 15;
+    .then((response) => response.json())
+    .then((data) => {
+        // Filter forecast data for the next day at 3:00 PM
+        const nextDayForecast = data.list.find((forecast) => {
+            const forecastDateTime = new Date(forecast.dt_txt);
+            return forecastDateTime.getHours() === 15; // Check for 3:00 PM
         });
 
-        if (nextDayForecast) {
-            console.log(nextDayForecast); // Check the next day's forecast data
+        // Display next day's forecasted temperature
+        document.getElementById('next-day-temperature').textContent = `${nextDayForecast.main.temp}°C`;
 
-            const nextDayTemperature = nextDayForecast.main.temp;
-            const nextDayDescription = nextDayForecast.weather[0].description;
-            const nextDayIconCode = nextDayForecast.weather[0].icon;
-
-            // Display next day's forecasted temperature at 3:00 PM
-            document.getElementById('next-day-temperature').textContent = nextDayTemperature + "°F";
-            document.getElementById('next-day-description').textContent = nextDayDescription;
-            document.getElementById('next-day-icon').setAttribute('src', `http://openweathermap.org/img/w/${nextDayIconCode}.png`);
-            document.getElementById('next-day-icon').setAttribute('alt', nextDayDescription);
-        } else {
-            console.error('No forecast available for the next day at 3:00 PM');
-        }
+        // Display next day's weather description
+        document.getElementById('next-day-description').textContent = nextDayForecast.weather[0].description;
     })
-    .catch(error => {
-        console.error('There was a problem fetching the forecast data:', error);
+    .catch((error) => {
+        console.log('Error fetching forecast data:', error);
     });

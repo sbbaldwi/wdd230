@@ -4,37 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development by Bri Christiansen, Course assignment Portal">
     <meta name="author" content="Bri Christiansen">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="./styles/small.css">
-    <link rel="icon" href="favicon.ico">
-    <meta content="WDD 230 - Web Frontend Development, Bri Christiansen, Scoots website">
     <meta property="og:title" content="Scoots website">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://raw.githubusercontent.com/sbbaldwi/wdd230/main/images/profilePic.webp">
     <meta property="og:url" content="https://sbbaldwin.github.io/wdd230/">
-    <meta name="description">
+    <meta name="description"
+        content="This website is for a motor scooter rental company in Cozumel Mexico called Scoots. This website is intended for my final project in WDD230 at BYU-Idaho.">
+    <title>Scoots</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/small.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+    <div class="message-container" id="temperature-message">
+        <span class="close" onclick="closeTemperatureMessage()">×</span>
+        <p>Today's high temperature: <span id="high-temperature"></span></p>
+    </div>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <img src="images/logo-removebg-preview.png" alt="Scoots Logo">
             </div>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Rentals</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Rentals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact-us.html" class="nav-link">Contact</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <div class="hero-container">
@@ -92,20 +103,21 @@
                 <button class="custom-button">Make A Reservation!</button>
             </div>
         </section>
-        <div class="weather-info">
-            <h2>Weather in Cozumel</h2>
-            <div class="weather-details">
-                <div class="current-weather">
-                    <p>Current Temperature: <span id="current-temperature"></span></p>
-                    <p>Current Humidity: <span id="current-humidity"></span></p>
-                    <p>Current Description: <span id="current-description"></span></p>
-                    <img src="" alt="" id="current-icon">
-                </div>
-                <div class="forecast">
-                    <h3>Next Day's Forecast at 3:00 PM:</h3>
-                    <p>Temperature: <span id="next-day-temperature"></span></p>
-                    <p>Description: <span id="next-day-description"></span></p>
-                    <img src="" alt="" id="next-day-icon">
+        <div class="weather-container">
+            <h2>Be sure to check the weather prior to your ride!</h2>
+            <div class="weather-info">
+                <h2>Weather in Cozumel</h2>
+                <div class="weather-details">
+                    <div class="current-weather">
+                        <p>Current Temperature: <span id="current-temperature"></span></p>
+                        <p>Current Humidity: <span id="current-humidity"></span></p>
+                        <p>Current Description: <span id="current-description"></span></p>
+                    </div>
+                    <div class="forecast" id="forecast-section">
+                        <h3>Next Day's Forecast at 3:00 PM:</h3>
+                        <p>Temperature: <span id="next-day-temperature"></span></p>
+                        <p>Description: <span id="next-day-description"></span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,5 +140,8 @@
     <script src="scripts/lastmod.js"></script>
     <script src="scripts/hammenu.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/message.js"></script>
+    <script src="scripts/navscroll.js"></script>
 </body>
+
 </html>
