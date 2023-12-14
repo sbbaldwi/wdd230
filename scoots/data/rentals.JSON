@@ -2,80 +2,62 @@
     "rentals": [
         {
             "name": "Honda Metro Scooter",
-            "maxpersons": "1",
-            "reservation": {
-                "halfday": "$20",
-                "fullday": "$30"
-            },
-            "walkin": {
-                "halfday": "$25",
-                "fullday": "$35"
-            },
+            "category": "Scooter",
+            "max_persons": 1,
+            "half_day_reservation": 20,
+            "full_day_reservation": 30,
+            "half_day_walk_in": 25,
+            "full_day_walk_in": 35,
             "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondametroscooter.webp"
         },
         {
             "name": "Honda Dio Scooter",
-            "maxpersons": "2",
-            "reservation": {
-                "halfday": "$30",
-                "fullday": "$40"
-            },
-            "walkin": {
-                "halfday": "$35",
-                "fullday": "$45"
-            },
+            "category": "Scooter",
+            "max_persons": 2,
+            "half_day_reservation": 30,
+            "full_day_reservation": 40,
+            "half_day_walk_in": 35,
+            "full_day_walk_in": 45,
             "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondadioscooter.webp"
         },
         {
             "name": "Honda PCX150 Scooter",
-            "maxpersons": "2",
-            "reservation": {
-                "halfday": "$40",
-                "fullday": "$50"
-            },
-            "walkin": {
-                "halfday": "$45",
-                "fullday": "$55"
-            },
+            "category": "Scooter",
+            "max_persons": 2,
+            "half_day_reservation": 40,
+            "full_day_reservation": 50,
+            "half_day_walk_in": 45,
+            "full_day_walk_in": 55,
             "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondapcx150scooter.webp"
         },
         {
             "name": "Honda Pioneer ATV",
-            "maxpersons": "4",
-            "reservation": {
-                "halfday": "$50",
-                "fullday": "$70"
-            },
-            "walkin": {
-                "halfday": "$60",
-                "fullday": "$80"
-            },
+            "category": "ATV",
+            "max_persons": 4,
+            "half_day_reservation": 50,
+            "full_day_reservation": 70,
+            "half_day_walk_in": 60,
+            "full_day_walk_in": 80,
             "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/hondapioneeratv.webp"
         },
         {
             "name": "Jeep Wrangler - 4 door with a/c",
-            "maxpersons": "5",
-            "reservation": {
-                "halfday": "$70",
-                "fullday": "$100"
-            },
-            "walkin": {
-                "halfday": "$85",
-                "fullday": "$125"
-            },
+            "category": "Jeep",
+            "max_persons": 5,
+            "half_day_reservation": 70,
+            "full_day_reservation": 100,
+            "half_day_walk_in": 85,
+            "full_day_walk_in": 125,
             "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/jeepwrangler4door.webp"
         },
         {
             "name": "Jeep Wrangler - 2 door",
-            "maxpersons": "4",
-            "reservation": {
-                "halfday": "$60",
-                "fullday": "$85"
-            },
-            "walkin": {
-                "halfday": "$70",
-                "fullday": "$90"
-            },
+            "category": "Jeep",
+            "max_persons": 4,
+            "half_day_reservation": 60,
+            "full_day_reservation": 85,
+            "half_day_walk_in": 70,
+            "full_day_walk_in": 90,
             "imageURL": "https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/images/jeepwrangler2door.webp"
         }
     ]
