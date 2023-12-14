@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('./data/rentals.json')
+    fetch('/data/rentals.json')
         .then(response => response.json())
         .then(data => displayRentals(data.rentals))
 });
@@ -38,4 +38,14 @@ function displayRentals(rentals) {
 
         rentalsContainer.appendChild(rentalCard);
     });
+}
+
+
+
+function Func() {
+    fetch("data/rental.json")
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => console.log(data));
 }
