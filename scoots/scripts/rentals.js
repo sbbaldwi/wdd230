@@ -1,13 +1,7 @@
-ocument.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     fetch('./data/rentals.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => displayRentals(data.rentals))
-        .catch(error => console.error('Error fetching rentals:', error));
 });
 
 function displayRentals(rentals) {
