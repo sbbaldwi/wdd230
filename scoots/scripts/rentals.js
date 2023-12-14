@@ -41,3 +41,19 @@ fetch('https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/data/rental
     .catch(error => {
         console.log('Error fetching data:', error);
     });
+
+function toggleView() {
+    var rentalsContainer = document.getElementById('rentalsContainer');
+    var priceTable = document.getElementById('priceTable');
+
+    if (rentalsContainer.style.display !== 'none') {
+        rentalsContainer.style.display = 'none';
+        priceTable.style.display = 'block';
+    } else {
+        rentalsContainer.style.display = 'flex';
+        priceTable.style.display = 'none';
+    }
+}
+
+// Attach click event to the toggle button
+document.getElementById('toggleButton').addEventListener('click', toggleView);
