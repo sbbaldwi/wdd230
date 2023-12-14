@@ -52,6 +52,13 @@ header {
     gap: 60px;
 }
 
+.nav-menu-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
 .nav-link {
     transition: 0.7s ease;
 }
