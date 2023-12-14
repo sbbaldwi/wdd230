@@ -1,12 +1,12 @@
 function createRentalItem(item) {
     var rentalDiv = document.createElement('div');
-    rentalDiv.classList.add('rental-card'); // Assign the 'rental-card' class
+    rentalDiv.classList.add('rental-card');
 
     var img = document.createElement('img');
     img.src = item.imageURL;
     rentalDiv.appendChild(img);
 
-    var name = document.createElement('h2'); // Use h2 for the rental name
+    var name = document.createElement('h2');
     name.textContent = item.name;
     rentalDiv.appendChild(name);
 
@@ -29,11 +29,10 @@ function createRentalItem(item) {
     document.getElementById('rentalsContainer').appendChild(rentalDiv);
 }
 
-// Fetch rental data
+// Fetch dawg
 fetch('https://raw.githubusercontent.com/sbbaldwi/wdd230/main/scoots/data/rentals.JSON')
     .then(response => response.json())
     .then(data => {
-        // Loop through the rentals and display each item
         data.rentals.forEach(item => {
             createRentalItem(item);
         });
@@ -55,5 +54,4 @@ function toggleView() {
     }
 }
 
-// Attach click event to the toggle button
 document.getElementById('toggleButton').addEventListener('click', toggleView);

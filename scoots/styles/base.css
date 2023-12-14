@@ -593,33 +593,23 @@ button {
 /*table styles*/
 .price-table {
     display: none;
-    /* Initially hide the price table */
     background-color: #ffc300;
-    /* Background color */
     border: 2px solid black;
-    /* Black outline */
     max-width: 800px;
-    /* Max width */
     margin: 20px auto;
-    /* Centering the table */
     padding: 20px;
-    /* Adding space */
 }
 
-/* Updated styles for the table */
 .price_table table {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid black;
-    /* Black outline for the table */
 }
 
 .price_table th,
 .price_table td {
     border: 1px solid black;
-    /* Grid lines for cells */
     padding: 12px;
-    /* Increased padding for space */
     text-align: left;
 }
 
