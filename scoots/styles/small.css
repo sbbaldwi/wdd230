@@ -48,15 +48,15 @@
 
     .nav-menu.active {
         left: 0;
-        height: 200px;
-        top: 80px;
+        height: 220px;
+        top: 65px;
         flex-direction: column;
     }
 
     .nav-menu-home.active {
         left: 0;
-        height: 200px;
-        top: 150px;
+        height: 210px;
+        top: 73px;
         flex-direction: column;
     }
 
