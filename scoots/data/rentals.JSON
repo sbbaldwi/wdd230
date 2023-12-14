@@ -32,7 +32,7 @@
         },
         {
             "name": "Honda Pioneer ATV",
-            "category":"ATV",
+            "category": "ATV",
             "max_persons": 4,
             "half_day_reservation": 50,
             "full_day_reservation": 70,
